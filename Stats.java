@@ -13,7 +13,7 @@ public class Stats {
         Get random number from 0-50 if D, 0-33 for F, multiply
         by line and add linemates together for line Capabilities 
      */     
-    public void generateStats(String team) {
+    public void generateStats() {
         this.line = player.getLine();
         if (player.getPosition() == "D") {
             offensiveCapabilities = wrapper.minAndMax(0, 50);

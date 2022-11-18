@@ -1,0 +1,32 @@
+Anaheim
+Arizona
+Boston
+Buffalo
+Calgary
+Carolina
+Chicago
+Denver
+Columbus
+Dallas
+Detroit
+Edmonton
+Florida
+Los Angeles
+Minnesota
+Seattle
+Montreal
+Nashville
+New Jersey
+Brooklyn
+New York
+Ottawa
+Philadelphia
+Pittsburgh
+San Jose
+St. Louis
+Tampa Bay
+Toronto
+Vancouver
+Las Vegas
+Washington
+Winnipeg

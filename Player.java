@@ -1,14 +1,10 @@
 public class Player {
     // Variables
     Teams team;
-    String position;
-    String playerType;
-    String playerName;
+    String position, playerType, playerName;
     int playModifier;
-    int line;
+    int line, offensiveCapabilities, defensiveCapabilities;
     Stats stats;
-    int offensiveCapabilities;
-    int defensiveCapabilities;
     RandomAPIWrapper random = new RandomAPIWrapper();
 
     // Creation
@@ -69,12 +65,14 @@ public class Player {
     }
 
         // Stats
-    public void generateStats(String team) {
+            // Generate Stats
+    public void generateStats() {
         stats = new Stats(this);
-        stats.generateStats(team);
+        stats.generateStats();
         offensiveCapabilities = stats.getOffensiveStats();
         defensiveCapabilities = stats.getDefensiveStats();
     }
+            // Get Stats
     public int getOffensiveStats() {
         return offensiveCapabilities;
     }

@@ -9,6 +9,7 @@ public class Teams{
     Player[] fLine1 = new Player[3], fLine2 = new Player[3], fLine3 = new Player[3], fLine4 = new Player[3],
      dLine1 = new Player[2], dLine2 = new Player[2], dLine3 = new Player[2];
     int currLine = 1, currOLine = 1;
+    int[] record = new int[3];
 
     // Creation
     public Teams(String teamName) {
@@ -177,10 +178,10 @@ public class Teams{
     }
 
         // Generating and Filling team w Players
-    public void generatePlayers(String team) {
+    public void generatePlayers() {
         for (int i = 0; i < 12; i++) {
             Player player = new Player("F", "Offensive", "F" + i);
-            player.generateStats(team);
+            player.generateStats();
             this.addPlayer(player);
             int lineNumber;
             if (i < 3) {
@@ -197,7 +198,7 @@ public class Teams{
         }
         for (int i = 0; i < 6; i++) {
             Player player = new Player("D", "Defensive", "D" + i);
-            player.generateStats(team);
+            player.generateStats();
             this.addPlayer(player);
             int lineNumber;
             if (i < 2) {
@@ -218,5 +219,15 @@ public class Teams{
         coaches[1] = coach2;
         Coaches coach3 = new Coaches("Def", "Defense Coach", "Offensive");
         coaches[2] = coach3;
+    }
+
+    public void addWin() {
+        record[0] = record[0]++;
+    }
+    public void addLoss() {
+        record[0] = record[0]++;
+    }
+    public void addTie() {
+        record[0] = record[0]++;
     }
 }
